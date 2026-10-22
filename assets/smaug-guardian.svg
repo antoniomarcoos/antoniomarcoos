@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+<title id="title">Smaug guards my repository</title><desc id="desc">Red vector dragon resting on a hoard, with the wings attached near its shoulders.</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#0d1117" /><stop offset="1" stop-color="#1f1514" /></linearGradient><linearGradient id="scale" x1=".15" y1="0" x2=".8" y2="1"><stop stop-color="#e29d63" /><stop offset=".22" stop-color="#b65c3b" /><stop offset=".53" stop-color="#773b2a" /><stop offset=".83" stop-color="#48251f" /><stop offset="1" stop-color="#241818" /></linearGradient><radialGradient id="glow"><stop stop-color="#c9873e" stop-opacity=".22" /><stop offset="1" stop-color="#c9873e" stop-opacity="0" /></radialGradient><linearGradient id="fire"><stop stop-color="#ffdb86" /><stop offset=".4" stop-color="#dc773c" /><stop offset="1" stop-color="#b4432b" stop-opacity="0" /></linearGradient><linearGradient id="wing" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#b16b45" /><stop offset=".25" stop-color="#743d2c" /><stop offset=".6" stop-color="#472620" /><stop offset="1" stop-color="#24191b" /></linearGradient><pattern id="scales" width="12" height="8" patternUnits="userSpaceOnUse"><path d="M0 0Q3 7 6 0M6 0Q9 7 12 0M-3 4Q0 11 3 4M3 4Q6 11 9 4M9 4Q12 11 15 4" fill="none" stroke="#efbc77" stroke-opacity=".17" stroke-width=".7" /></pattern><radialGradient id="eye"><stop stop-color="#fff6c6" /><stop offset=".3" stop-color="#f8ce5d" /><stop offset="1" stop-color="#c17a24" /></radialGradient></defs>
+<rect width="1000" height="280" rx="16" fill="url(#bg)" /><ellipse cx="690" cy="205" rx="280" ry="90" fill="url(#glow)" />
+<path d="M375 242 441 208 479 217 535 191 582 210 638 187 697 208 759 192 821 221 904 243Z" fill="#50402a" />
+<g fill="#b09451" opacity=".65"><path d="m440 224 8-8 7 11-12 3Zm30 5 12-10 6 10Zm30-19 8-7 9 8-10 5Zm30 22 10-8 9 9Zm32-16 9-12 8 12Zm35 16 11-9 6 12Zm31-18 9-12 8 11Zm29 15 12-8 7 10Zm37-12 8-11 9 12Zm32 17 10-8 7 9Zm33-15 12-10 9 12Zm35 17 10-7 8 9Zm33-11 9-7 9 11Z" /><circle cx="560" cy="236" r="3" /><circle cx="689" cy="236" r="3" /><circle cx="791" cy="240" r="3" /></g>
+
+<path d="M645 190C740 187 777 252 866 232S943 161 914 169C893 173 896 195 918 186C914 211 869 227 826 210L706 161Z" fill="url(#scale)"><animate attributeName="d" values="M645 190C740 187 777 252 866 232S943 161 914 169C893 173 896 195 918 186C914 211 869 227 826 210L706 161Z;M645 190C740 187 777 252 866 232S953 170 926 174C902 177 902 202 927 190C918 216 869 227 826 210L706 161Z;M645 190C740 187 777 252 866 232S943 161 914 169C893 173 896 195 918 186C914 211 869 227 826 210L706 161Z" dur="7s" repeatCount="indefinite" /></path>
+
+<g transform="translate(-55 0)" data-part="shoulder-wings"><g><animateTransform attributeName="transform" type="rotate" values="0 654 167;-3 654 167;0 654 167" dur="6s" repeatCount="indefinite" /><path d="M644 178 C634 135 617 103 591 80 C621 86 648 70 663 30 C659 80 686 107 724 92 C700 122 711 153 754 147 C733 174 719 187 692 170 C671 162 657 167 644 178 Z" fill="url(#wing)" stroke="#b78355" stroke-width="1.3" /><path d="M644 178 Q652 102 663 30 M663 30 Q665 115 724 92 M663 30 Q682 149 754 147 M644 178 Q665 151 692 170" fill="none" stroke="#a2543d" stroke-width="2" /></g>
+</g><g><animateTransform attributeName="transform" type="scale" values="1 1;1 1.012;1 1" dur="6s" repeatCount="indefinite" />
+<path d="M548 202C571 174 602 153 649 161C699 166 730 185 747 210L711 216 680 199 607 203Z" fill="url(#scale)" />
+<path d="M590 184C567 189 540 182 528 164C512 140 517 114 493 111L475 106 458 117 483 125 489 143C499 175 526 203 560 208Z" fill="url(#scale)" />
+<path d="m492 115-13-19 24 10 8-21 3 27-6 11Zm-12-4-21-6-23 10 24 5 22 8 15-9Z" fill="url(#scale)" />
+<path d="m454 119 13 10 20-4-9 8-22-7Z" fill="#4b2524" />
+<path d="m515 128 8 8-5 5 9 5-4 6 11 4-3 7 12 3-1 7 11 2 1 9" fill="none" stroke="#c57948" stroke-width="3" />
+<path d="m600 186-22 28-29 4-11 10 53-4 27-26m65-8 25 28 31 2 6 10-48-4-31-28" fill="url(#scale)" />
+<path d="m543 225-5 6 13-4m5-2-2 6 11-6m151 2 6 5 3-6m7 0 7 5-1-6" stroke="#d3b17a" stroke-width="2" />
+
+<path d="M548 202C571 174 602 153 649 161C699 166 730 185 747 210L711 216 680 199 607 203Z" fill="url(#scales)" />
+<path d="M590 184C567 189 540 182 528 164C512 140 517 114 493 111L475 106 458 117 483 125 489 143C499 175 526 203 560 208Z" fill="url(#scales)" />
+<path d="M491 130Q504 180 549 197" fill="none" stroke="#bc915b" stroke-width="8" opacity=".7" />
+<path d="m492 135 9-4m-5 12 9-4m-4 12 10-5m-4 13 10-5m-3 13 11-6m-2 13 10-7m1 12 10-7" stroke="#493024" stroke-width="2" />
+<path d="m571 177 1-13 10 8 7-15 10 9 9-15 10 11 10-13 10 13 10-12 10 15 11-10 9 16" fill="#b18d60" stroke="#4d3125" stroke-width="1" />
+<path d="M480 111 505 107 511 92 504 111 494 116Z" fill="#d4b886" />
+<path d="m477 108-10-15 17 14Z" fill="#dac59a" />
+<path d="m457 113 10-3 7 4-7 4-10-2Z" fill="#332319" />
+<path d="m461 113 6-2 2 3-6 2Z" fill="url(#eye)" />
+<path d="m466 111 0 5" stroke="#171812" stroke-width="1.2" />
+<path d="m441 116 12-2 6 3-10 3Z" fill="#371d19" />
+<path d="m450 120 3 6 2-5m4 2 3 6 2-5m5 0 3 5 2-5" fill="#e1cfa8" />
+<path d="M458 120 479 125 490 120M475 117l12 1" stroke="#3d211c" stroke-width="1.5" fill="none" />
+<path d="M595 84 Q630 110 644 178 M668 47 Q670 102 707 101 M676 92 Q699 142 744 151" fill="none" stroke="#d6aa74" stroke-opacity=".4" stroke-width="1.4" transform="translate(-55 0)" />
+<path d="m461 112 8-2-3 5Z" fill="#ffd371"><animate attributeName="opacity" values=".65;1;.65" dur="4s" repeatCount="indefinite" /></path>
+</g>
+<path d="M455 125Q430 120 406 132L414 125 381 124 397 117 374 111Q423 104 455 120Z" fill="url(#fire)" opacity="0"><animate attributeName="opacity" values="0;0;.75;.2;0;0" keyTimes="0;.45;.55;.65;.75;1" dur="9s" repeatCount="indefinite" /></path>
+<text x="50" y="68" fill="#baa977" font-family="monospace" font-size="11" letter-spacing="3">MY REPOSITORIES</text><text x="50" y="114" fill="#d7bd87" font-family="Georgia,serif" font-size="30">Under Smaug's guard</text><path d="M52 159H260" stroke="#795339"/><text x="52" y="191" fill="#ded1ad" font-family="Georgia,serif" font-size="17">Explore the treasure →</text></svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-labelledby="title desc">
+<title id="title">Antonio Marcos</title><desc id="desc">Mountains, stars and an animated golden ring.</desc>
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#0d1117" /><stop offset="1" stop-color="#192321" /></linearGradient>
+<linearGradient id="gold"><stop stop-color="#8c6b35" /><stop offset=".5" stop-color="#ead3a0" /><stop offset="1" stop-color="#a47e40" /></linearGradient>
+<radialGradient id="halo"><stop stop-color="#c9a45e" stop-opacity=".16" /><stop offset="1" stop-color="#c9a45e" stop-opacity="0" /></radialGradient>
+</defs>
+<rect width="1000" height="320" rx="18" fill="url(#sky)" />
+<circle cx="800" cy="125" r="160" fill="url(#halo)" />
+<g fill="#d9c69c">
+<circle cx="70" cy="51" r="1" /><circle cx="177" cy="93" r="1.4" /><circle cx="302" cy="33" r="1" /><circle cx="430" cy="62" r="1" /><circle cx="592" cy="29" r="1.4" /><circle cx="675" cy="82" r="1" /><circle cx="922" cy="57" r="1.3" /><circle cx="864" cy="35" r="1" />
+<circle cx="730" cy="40" r="1.8"><animate attributeName="opacity" values=".2;1;.2" dur="4s" repeatCount="indefinite" /></circle>
+<circle cx="946" cy="142" r="1.5"><animate attributeName="opacity" values="1;.2;1" dur="5s" repeatCount="indefinite" /></circle>
+</g>
+<path d="M0 262 92 176 150 228 236 144 315 236 401 185 485 259 578 173 660 242 741 166 839 247 916 186 1000 252V320H0Z" fill="#26332f" />
+<path d="m209 181 27-37 35 48-34-15-12 10Z M550 207l28-34 26 41-25-13-10 8Z M722 190l19-24 28 38-27-16-8 8Z" fill="#637066" opacity=".45" />
+<path d="M0 288 121 240 220 282 343 224 463 283 597 234 710 280 841 222 1000 283V320H0Z" fill="#14201e" />
+<path d="M0 308 175 280 347 309 537 278 731 309 893 276 1000 300V320H0Z" fill="#0d1515" />
+<g fill="none" stroke="url(#gold)">
+<circle cx="800" cy="125" r="53" stroke-width="5" />
+<ellipse cx="800" cy="125" rx="46" ry="51" stroke-width="1" opacity=".5" />
+<circle cx="800" cy="125" r="64" stroke-width=".7" stroke-dasharray="2 12" opacity=".6">
+<animateTransform attributeName="transform" type="rotate" from="0 800 125" to="360 800 125" dur="100s" repeatCount="indefinite" />
+</circle>
+<circle cx="800" cy="125" r="53" stroke="#ffe4a4" stroke-width="2" stroke-dasharray="24 310">
+<animateTransform attributeName="transform" type="rotate" from="0 800 125" to="360 800 125" dur="12s" repeatCount="indefinite" />
+</circle>
+<path d="M64 183H130m12 0h300" stroke-width="1" opacity=".65" />
+</g>
+<text x="64" y="125" fill="#eee8da" font-family="Georgia, 'Times New Roman', serif" font-size="47" letter-spacing="2">Antonio Marcos</text>
+<text x="66" y="160" fill="#bcaa85" font-family="monospace" font-size="13" letter-spacing="3">CODE · COFFEE · MIDDLE-EARTH</text><text x="66" y="216" fill="#aab5ae" font-family="Georgia,serif" font-size="16" font-style="italic">Speak, friend, and enter.</text></svg>

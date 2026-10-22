@@ -42,16 +42,25 @@ jobs:
           import re
           readme = Path("README.md")
           content = readme.read_text()
+          generated = Path("assets/generated")
+          generated.mkdir(exist_ok=True)
           for filename in ("journey-contributions.svg", "profile-stats.svg"):
-              digest = hashlib.sha256(Path("assets", filename).read_bytes()).hexdigest()[:12]
-              content = re.sub(r"\./assets/" + re.escape(filename) + r"(?:\?v=[^\"\s]*)?", "./assets/" + filename + "?v=" + digest, content)
+              source = Path("assets", filename)
+              digest = hashlib.sha256(source.read_bytes()).hexdigest()[:12]
+              stem = source.stem
+              target = generated / (stem + "-" + digest + ".svg")
+              for previous in generated.glob(stem + "-*.svg"):
+                  previous.unlink()
+              target.write_bytes(source.read_bytes())
+              pattern = r"\./assets/(?:generated/)?" + re.escape(stem) + r"(?:-[0-9a-f]{12})?\.svg(?:\?v=[^\"\s]*)?"
+              content = re.sub(pattern, "./" + target.as_posix(), content)
           readme.write_text(content)
           PY
       - name: Publish updated profile data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/journey-contributions.svg assets/profile-stats.svg README.md
+          git add assets/journey-contributions.svg assets/profile-stats.svg assets/generated README.md
           if ! git diff --cached --quiet; then
             git commit -m "Update profile data"
             git pull --rebase origin main

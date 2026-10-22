@@ -1,0 +1,59 @@
+name: Update profile data
+
+on:
+  schedule:
+    - cron: '23 9 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_contributions.py'
+      - 'scripts/update_stats.py'
+      - 'assets/fellowship-walk.svg'
+      - '.github/workflows/contributions.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-contributions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Generate contribution journey
+        run: python3 scripts/update_contributions.py
+      - name: Generate profile statistics
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_stats.py
+      - name: Refresh image versions
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import re
+          readme = Path("README.md")
+          content = readme.read_text()
+          for filename in ("journey-contributions.svg", "profile-stats.svg"):
+              digest = hashlib.sha256(Path("assets", filename).read_bytes()).hexdigest()[:12]
+              content = re.sub(r"\./assets/" + re.escape(filename) + r"(?:\?v=[^\"\s]*)?", "./assets/" + filename + "?v=" + digest, content)
+          readme.write_text(content)
+          PY
+      - name: Publish updated profile data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/journey-contributions.svg assets/profile-stats.svg README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update profile data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

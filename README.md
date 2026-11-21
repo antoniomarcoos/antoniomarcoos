@@ -21,11 +21,11 @@ I like building things and figuring out how they work, from web apps to low-leve
 <br /><br />
 
 
-<img src="./assets/generated/journey-contributions-9a88d172f0f3.svg" width="100%" alt="My GitHub journey — real contribution data with the animated Fellowship and Gollum following behind." />
+<img src="./assets/generated/journey-contributions-947e1ab5c44e.svg" width="100%" alt="My GitHub journey — real contribution data with the animated Fellowship and Gollum following behind." />
 
 <br />
 
-<img src="./assets/generated/profile-stats-43b055e78b92.svg" width="100%" alt="Chronicles of the journey — public GitHub stats, commit hours in UTC−3, and language distributions." />
+<img src="./assets/generated/profile-stats-74fd4690490d.svg" width="100%" alt="Chronicles of the journey — public GitHub stats, commit hours in UTC−3, and language distributions." />
 
 <br />
 
